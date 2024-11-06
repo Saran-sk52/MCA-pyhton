@@ -7,8 +7,7 @@ student = {
 }
 print(student)
 student.update({"total_marks":int(input("Enter total marks: "))})
-print("After adding total marks:")
-print(student)
+print("After adding total marks and grade:")
 def calculate_grade(total_marks):
     if total_marks >= 90:
         return 'A'
@@ -23,7 +22,6 @@ def calculate_grade(total_marks):
     else:
         return 'F'
 student['grade'] = calculate_grade(student['total_marks'])
-print("After adding grade:")
 print(student)
 print("After deleting roll number:")
 del student['roll.no']
